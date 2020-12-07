@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    font-family: 'Russo One', sans-serif;
+}
+.text {
+    font-size: 3em;
+    color: #fff;
+    animation: glitch 0.5s linear infinite;
+}
+@keyframes glitch {
+    0%, 100% {
+        text-shadow: -1.5px -1.5px 0 #0ff, 1.5px 1.5px 0 #f00;
+    }
+    25% {
+        text-shadow: 1.5px 1.5px 0 #0ff, -1.5px -1.5px 0 #f00;
+    }
+    50% {
+        text-shadow: 1.5px -1.5px 0 #0ff, -1.5px 1.5px #f00;
+    }
+    75% {
+        text-shadow: 1.5px 1.5px 0 #0ff, 1.5px -1.5px 0 #f00;
+    }
+}
